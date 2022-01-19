@@ -1,6 +1,5 @@
 //
-//  main.swift
-//  2L_FominRoman
+//  урок 2
 //
 //  Created by Rom on 19.01.2022.
 //
