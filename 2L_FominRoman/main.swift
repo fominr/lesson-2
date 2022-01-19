@@ -6,5 +6,13 @@
 
 import Foundation
 
-print("Hello, World!")
+// Написать функцию, которая определяет, четное число или нет.
+
+func division2( number: Int ) -> Bool {
+    if number % 2 == 0 {
+        return true
+    }else {
+        return false
+    }
+}
 
