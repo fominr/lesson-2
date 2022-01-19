@@ -26,6 +26,12 @@ func division3( number: Int ) -> Bool {
     }
 }
 
-
+// Создать возрастающий массив из 100 чисел
+var array = [Int]() // создаем пустой массив
+for i in 0...99 {
+    array.append(i)
+}
+print("Создаем массив из 100 чисел по возрастанию:")
+print(array)
 
 
