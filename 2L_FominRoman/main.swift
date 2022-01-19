@@ -1,8 +1,6 @@
 //
 //  урок 2
 //
-//  Created by Rom on 19.01.2022.
-//
 
 import Foundation
 
@@ -35,3 +33,16 @@ print("Создаем массив из 100 чисел по возрастани
 print(array)
 
 
+
+// Удалить из этого массива все четные числа и все числа, которые не делятся на 3.
+
+var i = 0
+while i < array.count {
+    if division2 (number: array[i]) || division3(number: array[i]) {
+        array.remove(at: i)
+    } else {
+    i+=1
+    }
+}
+print("Удаляем из массива все четные числа и все числа, которые не делятся на 3: ")
+print(array)
