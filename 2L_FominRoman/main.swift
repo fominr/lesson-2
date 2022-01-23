@@ -80,3 +80,4 @@ func fibonacci (_ numberOfElements: Int) -> [Double] {
 
 print("вывод массива из чисел Фибоначчи: \(fibonacci(100))") // вывод массива из 100 элементов
 
+// задание 6
