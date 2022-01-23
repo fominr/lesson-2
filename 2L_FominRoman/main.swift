@@ -55,26 +55,28 @@ print(array)
 // на входе  в функцию - кол-во элементов в ряду
 // на выходе из функции - массив из чисел Фибоначчи
 
-func fibonacci (numberOfElements: Int) -> [UInt64] {
-    var arrayFibonacci: [UInt64] = [] // объявляем пустой массив, элементы максимальной числовой размерности
-    arrayFibonacci.append(0) // нулевой элемент присвоить  0
-    arrayFibonacci.append(1) // первый элемент присвоить  1
-    var element: UInt64 = 0
-    var numberOfElements1 = numberOfElements
+
+func fibonacci (_ numberOfElements: Int) -> [Double] {
+    var arrayFibonacci: [Double] = []
     
-    if numberOfElements > 93 {
-        print("К сожалению, не могу вывести 100 элементов, есть ограничения на разрядность чисел в языке SWIFT. Произведу расчет только до 94 элемента")
-        numberOfElements1 = 93
+    if numberOfElements > 0 {
+    arrayFibonacci.append(0) // первый элемент массива значение 0
     }
+        
+    if numberOfElements > 1 {
+        arrayFibonacci.append(1) // второй элемент значение 1
+        }
     
-    for i in 2...numberOfElements1 {
-        element = arrayFibonacci [i-2] + arrayFibonacci [i-1]
-        arrayFibonacci.append(element)
-    }
+    if numberOfElements > 2 { // создаем массив из чисел фибоноччи с третьего элемента
     
+            for i in 2...(numberOfElements-1) {
+                arrayFibonacci.append (arrayFibonacci [i-2] + arrayFibonacci [i-1])
+            }
+        }
+   
     return arrayFibonacci
 }
 
-var arr = fibonacci(numberOfElements: 100)
-print("Массив из чисел Фибоначчи: ")
-print(arr)
+
+print(fibonacci(100)) // вывод массива из 100 элементов
+
