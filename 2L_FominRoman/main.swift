@@ -78,5 +78,5 @@ func fibonacci (_ numberOfElements: Int) -> [Double] {
 }
 
 
-print(fibonacci(100)) // вывод массива из 100 элементов
+print("вывод массива из чисел Фибоначчи: \(fibonacci(100))") // вывод массива из 100 элементов
 
